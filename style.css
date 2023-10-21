@@ -1,0 +1,378 @@
+* {
+    /* border: 2px red solid; */
+}
+
+.mainpage {
+    background-color: rgb(232, 239, 241);
+    background-color: #E9F8F9;
+    /* background-image: linear-gradient(to top right,  #ccc6c6,  rgb(232,239,241)); */
+    /* background-image: linear-gradient(to top right, rgba(224, 248, 255, 234) 0%, rgb(137,157,163)  70%, #EBECF9 100%); */
+    height: 100vh;
+}
+.container{
+    position: relative;
+}
+.menubar {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+}
+
+.menubar img {
+    height: 30px;
+}
+
+.desktop_navbar {
+    display: flex;
+}
+
+.desktop_navbar {
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.logo img {
+    height: 100px;
+    cursor: pointer;
+}
+
+.logo_phone {
+    position: absolute;
+    z-index: 0;
+    /* border: 2px red solid; */
+    left: 3%;
+    cursor: pointer;
+    top: 2%;
+    display: none;
+}
+
+.logo_phone img {
+    height: 50px;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.desktop_contents {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    align-items: center;
+    height: 60px;
+}
+
+.logo {
+    margin: 0px 0px 40px 0px;
+    height: 100px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop_contents li a {
+    cursor: pointer;
+    padding: 8px 25px;
+    color: #5b0f5b;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.desktop_contents li a:hover {
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+.desktop_contents li a:hover .arrow_down {
+    border: solid #000;
+    border-width: 0px 3px 3px 0px;
+}
+
+.arrow {
+    border: solid #5b0f0f;
+    border-width: 0px 3px 3px 0px;
+    padding: 3px;
+    margin-left: 5px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    margin-bottom: 3px;
+}
+
+.right {
+    margin-bottom: 2px;
+    transform: rotate(-45deg);
+    border-color: #000a;
+    border-width: 0px 2px 2px 0px;
+}
+
+.services_dropdown {
+    position: absolute;
+    background-color: rgb(233, 236, 251);
+    padding: 20px 10px;
+    display: none;
+    z-index: 1;
+    width: 180%;
+    left: -42px;
+}
+
+.services_dropdown li {
+    padding: 8px;
+    cursor: pointer;
+    border-left: 3px cyan solid;
+    margin: 15px 0px;
+    border-radius: 1px;
+}
+
+.services_dropdown li:hover {
+    background-color: #C2D9FF60;
+    font-weight: 600;
+}
+
+.services {
+    position: relative;
+}
+
+.services:hover .services_dropdown {
+    display: block;
+}
+
+.heropage_content {
+    display: flex;
+}
+
+.heropage {
+    position: relative;
+}
+
+.heropage h1 {
+    font-size: 6rem;
+    font-family: Paper_story;
+}
+
+.main_body_content {
+    width: 50%;
+    margin: 80px auto 0px;
+    display: block;
+    padding: 0px 50px;
+    position: relative;
+}
+
+.horizontal_line {
+    position: absolute;
+    height: 380px;
+    width: 2px;
+    background-color: #E9F8F9;
+}
+
+.main_body_content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main_body_content2 img {
+    height: 400px;
+    cursor: pointer;
+    outline-offset: -25px;
+    overflow: hidden;
+}
+
+.line1 {
+    left: 20%;
+    transition: bottom 1s ease;
+    bottom: -100%;
+}
+
+.main_body_content2:hover .line1 {
+    bottom: 3%;
+}
+
+.line2 {
+    transition: top 1s ease;
+    top: -100%;
+    right: 20%;
+}
+
+.main_body_content2:hover .line2 {
+    top: 3%;
+}
+
+.line3 {
+    top: 40%;
+    transform: rotate(90deg);
+    transition: right 1s ease;
+    height: 425px;
+    right: -150%;
+}
+
+.main_body_content2:hover .line3 {
+    right: 50%;
+}
+
+.line4 {
+    transition: left 1s ease;
+    transform: rotate(90deg);
+    bottom: 40%;
+    height: 425px;
+    left: -150%;
+}
+
+.main_body_content2:hover .line4 {
+    left: 50%;
+}
+
+.svg_quotes2{
+    transform: rotate(180deg);
+}
+.quote_container svg{
+    height: 60px;
+}
+
+.second_page{
+    margin-top: 50px;
+}
+
+.carousel_button img{
+    height: 50px;
+}
+.prev{
+    
+}
+.carousel_button{
+    position: absolute;
+}
+.second_body{
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    /* padding: 50px; */
+    border: 2px teal solid;
+}
+.quote_container{
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    padding: 100px;
+    width: 100vw;
+    border: 2px tomato solid;
+    display: flex;
+    
+}
+.quote{
+    display: flex;
+}
+.quote{
+    display: flex;
+    justify-content: space-between;
+}
+.quote_content{
+    font-size: 3rem;
+    width: 65%;
+}
+
+
+
+@media (max-width: 698px) {
+    * {
+        /* border: 1px red solid; */
+    }
+
+    .menubar {
+        z-index: 3;
+    }
+
+    .desktop_navbar {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        background-color: #C2D9FF;
+        margin-left: -199%;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        height: 100vh;
+        justify-content: flex-start;
+        padding-top: 100px;
+        position: absolute;
+    }
+
+    .visible {
+        margin-left: 0%;
+        position: absolute;
+        z-index: 2;
+        background-color: #C2D9FF;
+    }
+
+    .logo {
+        height: 200px;
+        width: 200px;
+    }
+
+    .logo img {
+        height: 200px;
+    }
+
+    .logo_phone {
+        position: absolute;
+        display: block;
+    }
+
+    .desktop_contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 200px;
+        width: auto;
+    }
+
+    .desktop_contents li a {
+        margin: 20px 10px;
+        padding: 5px 15px;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+    .services_dropdown {
+        right: 50%;
+        width: 180%;
+        border-radius: 0px 0px 0px 20px;
+    }
+
+    .heropage h1 {
+        font-size: 4rem;
+        font-family: Paper_story;
+    }
+
+    .heropage p {
+        font-size: 1.4rem;
+    }
+
+    .main_body_content1 {
+        margin: 0px;
+        padding: 20% 10%;
+        width: 100%;
+        height: 95%;
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main_content_heropage{
+        transform: translateY(20%);
+    }
+    .main_body_content2 {
+        display: none;
+    }
+}
